@@ -10,6 +10,7 @@ var totalscreens = document.getElementById("totalscreens");
 var deathcount = document.getElementById("deathcount");
 var bubblecount = document.getElementById("bubblecount");
 var brickcount = document.getElementById("brickcount");
+var enemycount = document.getElementById("enemycount");
 
 window.onload = function () 
 {
@@ -29,6 +30,7 @@ function appendData(data)
 	areascreens.innerHTML = `Area Map: ${data.AreaMapPercent}%`;
 	totalitems.innerHTML = `Total Items: ${data.TotalItemPercent}%`;
 	totalscreens.innerHTML = `Total Map: ${data.TotalMapPercent}%`;
+	enemycount.innerHTML = `Total Enemies Glitched: ${data.TotalEnemiesPercent}%`;
 	deathcount.innerHTML = `Deaths: ${data.DeathCount}`;
 	bubblecount.innerHTML = `Bubbles Popped: ${data.BubbleCount}`;
 	brickcount.innerHTML = `Bricks Broken: ${data.BricksCount}`;
